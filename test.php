@@ -2,12 +2,17 @@
 /*
 Plugin Name: Test ajout utilisateur
 Description: Il s'agit d'un plugins servant à tester l'ajout de manière programmée un ou plusieurs utilisateurs wordpress
-Author: Pako MATHIEU 
+Author: Pako MATHIEU
 Version: 1.0
 */
+
+
+
 add_action( 'init', function () {
-  
-	
+
+  $xml = simplexml_load_file("exemple_export.xml") or die("Error: Cannot create object");
+
+  ./*
 	for($i=1;$i<=3;$i++){
 		$username = 'user'.$i;
 		$password= 'pass'.$i;
@@ -15,17 +20,20 @@ add_action( 'init', function () {
 		if ( ! username_exists( $username ) ) {
 			wp_create_user( $username, $password, $email_address );
 		}
-		
-	}
-	/*$username = 'admin';
+
+	*/
+
+
+	$username = $xml->user[0]->prenom ." ".$xml->user[0]->nom
 	$password = 'password';
-	$email_address = 'webmaster@mydomain.com';
+	$email_address = $xml->user[0]->courriel ;
+
 	if ( ! username_exists( $username ) ) {
 		$user_id = wp_create_user( $username, $password, $email_address );
 		$user = new WP_User( $user_id );
 		$user->set_role( 'administrator' );
-	}*/
-	
+	}
+
 } );
 
 ?>

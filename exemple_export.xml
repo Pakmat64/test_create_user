@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+  <user>
+    <nom>Mathieu</nom>
+    <nomDeJeuneFille></nomDeJeuneFille>
+    <prenom>Pako</prenom>
+    <inscrit>16/11/2017</inscrit>
+    <roles>Adhérent, Administrateur, Membre du bureau</roles>
+    <photoActuelle>&lt;img typeof="foaf:Image" class="img-responsive" src="https://www.hego-zaharra.fr/sites/default/files/IMG_6911.JPG" width="1289" height="1920" alt="" /&gt;</photoActuelle>
+    <photoAncienne>&lt;img typeof="foaf:Image" class="img-responsive" src="https://www.hego-zaharra.fr/sites/default/files/default_images/noprofile_1.gif" width="228" height="228" alt="" /&gt;</photoAncienne>
+    <courriel>pakoanglet@gmail.com</courriel>
+    <competences>Java, C++, SQL, HTML, CSS, PHP</competences>
+    <fonctionAuSeinDuBureauDeHegoZaharra></fonctionAuSeinDuBureauDeHegoZaharra>
+    <formationsIutDeBayonne>
+      Edit view
+
+
+
+
+
+
+          |DUT Informatique:2019:Formation initiale:En cours|
+
+
+
+
+
+
+
+    </formationsIutDeBayonne>
+    <formationsEffectu-esDansUnAutre-tablissement>
+      Edit view
+
+
+
+
+
+
+          |Master 2:Bac+5 (ou équivalent):2013:Ecole Supérieure de Commerce:Privé:Autres:80000:Amiens:France|
+
+
+
+
+
+
+
+    </formationsEffectu-esDansUnAutre-tablissement>
+    <emplois>
+      Edit view
+
+
+          |Febus Optics:Ingénieur développement scientifique:mars 2016:64000:Pau:France|
+
+
+          |GFI:Ingénieur Système HPC:mai 2015 à décembre 2015:64000:Pau:France|
+
+
+          |Serviware (groupe Bull):Intégrateur calcul haut performance:janvier 2011 à avril 2015:31000:Toulouse:France|
+
+
+          |ASA:Administrateur de centre de calcul HPC:avril 2010 à décembre 2010:34000:Montpellier:France|
+
+    </emplois>
+    <facebook>&lt;a href="https://www.facebook.com/pako.mathieu"&gt;https://www.facebook.com/pako.mathieu&lt;/a&gt;</facebook>
+    <google-></google->
+    <linkedIn>&lt;a href="https://www.linkedin.com/in/pako.mathieu/"&gt;https://www.linkedin.com/in/pako.mathieu/&lt;/a&gt;</linkedIn>
+    <twitter></twitter>
+    <viadeo></viadeo>
+  </user>
+</users>
