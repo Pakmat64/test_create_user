@@ -5,14 +5,13 @@ Description: Il s'agit d'un plugins servant à tester l'ajout de manière progra
 Author: Pako MATHIEU
 Version: 1.0
 */
-
-
-
 add_action( 'init', function () {
-
-  $xml = simplexml_load_file("exemple_export.xml") or die("Error: Cannot create object");
-
-  ./*
+	//$file   = fetch_feed('http://iparla.iutbayonne.univ-pau.fr/~pmathieu003/exemple_export.xml');
+	$xml = simplexml_load_file( 'http://iparla.iutbayonne.univ-pau.fr/~pmathieu003/wordpress/wp-content/plugins/test_create_user/exemple_export.xml' );
+	//$xml->xpath('/rss/channel/wp:category');
+	//$items = $file->get_items();
+ //$xml = XMLReader::open('exemple_export.xml');
+  /*
 	for($i=1;$i<=3;$i++){
 		$username = 'user'.$i;
 		$password= 'pass'.$i;
@@ -22,18 +21,18 @@ add_action( 'init', function () {
 		}
 
 	*/
+	$username = $xml->user[0]->prenom;
 
-
-	$username = $xml->user[0]->prenom ." ".$xml->user[0]->nom
+	//$username = 'lol';
 	$password = 'password';
+	//$email_address ='pakmat@live.fr';
 	$email_address = $xml->user[0]->courriel ;
 
 	if ( ! username_exists( $username ) ) {
 		$user_id = wp_create_user( $username, $password, $email_address );
 		$user = new WP_User( $user_id );
-		$user->set_role( 'administrator' );
+		$user->set_role( 'contributor' );
 	}
 
 } );
-
 ?>
